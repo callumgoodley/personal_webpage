@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from './global';
+import { theme } from './theme';
+import { Burger, Menu } from './components';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [ open, setOpen ] = useState(false);
+
+	return (
+		<ThemeProvider theme={theme}>
+			<main>
+				<GlobalStyles />
+				<section>
+					<Burger open={open} setOpen={setOpen} />
+					<Menu open={open} setOpen={setOpen} />
+				</section>
+				<section>
+					<h1>
+						Hello, my name is Callum Goodley and I am a Junior Software Developer. Welcome to my webpage.
+					</h1>
+				</section>
+			</main>
+		</ThemeProvider>
+	);
 }
 
 export default App;
