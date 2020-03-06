@@ -1,28 +1,20 @@
-import React, { useState } from 'react';
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from './global';
-import { theme } from './theme';
-import { Burger, Menu } from './components';
+import React from 'react';
+import { About, Home, Projects, Contact } from './pages';
+import { Router } from '@reach/router';
 
-function App() {
-	const [ open, setOpen ] = useState(false);
-
-	return (
-		<ThemeProvider theme={theme}>
+class App extends React.Component {
+	render() {
+		return (
 			<main>
-				<GlobalStyles />
-				<section>
-					<Burger open={open} setOpen={setOpen} />
-					<Menu open={open} setOpen={setOpen} />
-				</section>
-				<section>
-					<h1>
-						Hello, my name is Callum Goodley and I am a Junior Software Developer. Welcome to my webpage.
-					</h1>
-				</section>
+				<Router>
+					<Home path="/" />
+					<About path="/about" />
+					<Projects path="/projects" />
+					<Contact path="/contact" />
+				</Router>
 			</main>
-		</ThemeProvider>
-	);
+		);
+	}
 }
 
 export default App;

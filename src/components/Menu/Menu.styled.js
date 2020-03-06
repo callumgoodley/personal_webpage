@@ -17,9 +17,10 @@ export const StyledMenu = styled.nav`
 		width: 100%;
 	}
 
-	a {
+	.links {
 		font-size: 2rem;
 		text-transform: uppercase;
+		text-decoration: none;
 		padding: 2rem 0;
 		font-weight: bold;
 		letter-spacing: 0.5rem;

@@ -21,7 +21,8 @@ export const GlobalStyles = createGlobalStyle`
   h1 {
     font-size: 2rem;
     text-align: center;
-    text-transform: uppercase;
+    // text-transform: uppercase;
+    padding: 35%;
   }
   img {
     border-radius: 5px;
@@ -34,7 +35,7 @@ export const GlobalStyles = createGlobalStyle`
   small {
     display: block;
   }
-  a {
+  .links {
     color: ${({ theme }) => theme.primaryHover};
     text-decoration: none;
   }
