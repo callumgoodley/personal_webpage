@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../../global';
 import { theme } from '../../theme';
 import { Burger, Menu } from '../../components';
+import { CSSTransition } from 'react-transition-group';
 
 function Contact() {
 	const node = useRef();
@@ -19,9 +20,11 @@ function Contact() {
 					<Burger open={open} setOpen={setOpen} />
 					<Menu open={open} setOpen={setOpen} />
 				</section>
-				<section>
-					<h1>Welcome to my contact page.</h1>
-				</section>
+				<CSSTransition in={true} appear={true} timeout={1500} classNames="fade">
+					<section>
+						<h1>Welcome to my contact page.</h1>
+					</section>
+				</CSSTransition>
 			</main>
 		</ThemeProvider>
 	);
