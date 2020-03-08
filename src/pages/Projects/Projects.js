@@ -22,7 +22,38 @@ function Projects() {
 				</section>
 				<CSSTransition in={true} appear={true} timeout={1500} classNames="fade">
 					<section>
-						<h1>Welcome to my projects page.</h1>
+						<h1>Projects</h1>
+						<p className="projects">
+							<span className="bold">Northcoders News App</span> - During the course my first project
+							involved creating back and front-end apps for a reddit-style news page. It included articles
+							which could be filtered, up-voted and commented on when a user is logged in.
+							<br />
+							<br />
+							BACK-END - I used express to query an pSQL database that I created with pre-existing article
+							and comments data. This API was written using Javascript, was tested using mocha, chai and
+							supertest and was then hosted on heroku.
+							<br />
+							<br />
+							FRONT-END - It was created using React and Javascript making GET, POST, PATCH and DELETE
+							requests to the back-end API using axios. The app makes use of reach/router for react in
+							order link and navigate components/screens throughout.
+							<br />
+							<br />
+							<br />
+							<br />
+							<span className="bold">Shop Local App</span> - For my final group project we created a
+							Deliveroo style app that connected users and local independent, organic and ethical shops to
+							one another.
+							<br />
+							<br />
+							FRONT-END - I used React-Native to create an ios app taking advantage of React-Natives
+							libraries for Redux, Navigation, Maps and Authentication.
+							<br />
+							<br />
+							BACK-END - we decided to go serverless with Google Firebase for our database which included
+							Firebase Authentication which we could easily make simple axios requests to for data. We
+							also used a PayPal API which allowed us to facilitate payments from user to vendor.
+						</p>
 					</section>
 				</CSSTransition>
 				<footer className="foot">

@@ -32,6 +32,10 @@ export const GlobalStyles = createGlobalStyle`
     padding-left: 25%;
     padding-right: 25%;
   }
+  .bold{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
   .foot{
     height: 5%;
     position: fixed;
@@ -46,8 +50,11 @@ export const GlobalStyles = createGlobalStyle`
     padding-left: 10%;
     padding-right: 10%;
   }
-  .social {
-
+  .projects {
+   font-size: 1.2rem;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .fade-appear {
     opacity: 0;
