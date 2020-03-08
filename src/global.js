@@ -22,10 +22,10 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
-  h2 {
+  .emoji {
     font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
@@ -34,18 +34,20 @@ export const GlobalStyles = createGlobalStyle`
   }
   .foot{
     height: 5%;
-    color: #055E5B;
     position: fixed;
-    left: 0;
-    bottom: 0;
+    left: -2%;
+    bottom: 2%;
     width: 100%;
-    background-color: #D3D3D3;
-    color: white;
     text-align: right;
   }
-  text {
-    color: #8C4E4E;
-    padding: 2%
+  .about {
+   font-size: 1.5rem;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .social {
+
   }
   .fade-appear {
     opacity: 0;
