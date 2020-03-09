@@ -5,6 +5,11 @@ import { GlobalStyles } from '../../global';
 import { theme } from '../../theme';
 import { Burger, Menu } from '../../components';
 import { CSSTransition } from 'react-transition-group';
+import { library, findIconDefinition, icon } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fas, fab);
 
 function About() {
 	const node = useRef();
@@ -12,6 +17,17 @@ function About() {
 
 	const [ open, setOpen ] = useState(false);
 	const [ pageAppear, setPageAppear ] = useState(true);
+
+	// Below shows how to get svg tag for icons:
+
+	const facebook = findIconDefinition({ prefix: 'fab', iconName: 'facebook-f' });
+	const Fb = icon(facebook).html;
+	const twitter = findIconDefinition({ prefix: 'fab', iconName: 'twitter' });
+	const Tw = icon(twitter).html;
+	const gitHub = findIconDefinition({ prefix: 'fab', iconName: 'github' });
+	const git = icon(gitHub).html;
+	const linkedIn = findIconDefinition({ prefix: 'fab', iconName: 'linkedin' });
+	const li = icon(linkedIn).html;
 
 	return (
 		<ThemeProvider theme={theme}>

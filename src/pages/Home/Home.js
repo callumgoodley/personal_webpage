@@ -17,19 +17,16 @@ function Home() {
 
 	const [ open, setOpen ] = useState(false);
 
+	// Below shows how to get svg tag for icons:
+
 	const facebook = findIconDefinition({ prefix: 'fab', iconName: 'facebook-f' });
 	const Fb = icon(facebook).html;
-
 	const twitter = findIconDefinition({ prefix: 'fab', iconName: 'twitter' });
 	const Tw = icon(twitter).html;
-
 	const gitHub = findIconDefinition({ prefix: 'fab', iconName: 'github' });
 	const git = icon(gitHub).html;
-
 	const linkedIn = findIconDefinition({ prefix: 'fab', iconName: 'linkedin' });
 	const li = icon(linkedIn).html;
-
-	console.log('Git >>> ', li[0]);
 
 	return (
 		<ThemeProvider theme={theme}>
