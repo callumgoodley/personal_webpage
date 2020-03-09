@@ -29,7 +29,7 @@ function Projects() {
 							which could be filtered, up-voted and commented on when a user is logged in.
 							<br />
 							<br />
-							BACK-END - I used express to query an pSQL database that I created with pre-existing article
+							BACK-END - I used express to query a pSQL database that I created with pre-existing article
 							and comments data. This API was written using Javascript, was tested using Mocha, Chai and
 							Supertest and was then hosted on heroku.<br />
 							<a href="https://github.com/callumgoodley/Back-end-project" className="projects">

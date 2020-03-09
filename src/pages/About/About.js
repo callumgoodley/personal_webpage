@@ -35,7 +35,7 @@ function About() {
 							using Google Firebase.
 							<br />
 							<br />
-							Please see CV for more information.
+							Please request a CV or get in contact for more information.
 						</p>
 					</section>
 				</CSSTransition>
