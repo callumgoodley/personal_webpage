@@ -30,20 +30,28 @@ function Projects() {
 							<br />
 							<br />
 							BACK-END - I used express to query an pSQL database that I created with pre-existing article
-							and comments data. This API was written using Javascript, was tested using mocha, chai and
-							supertest and was then hosted on heroku.
+							and comments data. This API was written using Javascript, was tested using Mocha, Chai and
+							Supertest and was then hosted on heroku.<br />
+							<a href="https://github.com/callumgoodley/Back-end-project" className="projects">
+								Git Repo Here.
+							</a>
 							<br />
 							<br />
 							FRONT-END - It was created using React and Javascript making GET, POST, PATCH and DELETE
 							requests to the back-end API using axios. The app makes use of reach/router for react in
 							order link and navigate components/screens throughout.
 							<br />
-							<br />
+							<a href="https://github.com/callumgoodley/Back-end-project" className="projects">
+								Git Repo Here.
+							</a>
 							<br />
 							<br />
 							<span className="bold">Shop Local App</span> - For my final group project we created a
 							Deliveroo style app that connected users and local independent, organic and ethical shops to
-							one another.
+							one another.<br />
+							<a href="https://github.com/callumgoodley/shopLocal-front-end" className="projects">
+								Git Repo Here.
+							</a>
 							<br />
 							<br />
 							FRONT-END - I used React-Native to create an ios app taking advantage of React-Natives

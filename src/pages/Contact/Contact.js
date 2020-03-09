@@ -22,7 +22,20 @@ function Contact() {
 				</section>
 				<CSSTransition in={true} appear={true} timeout={1500} classNames="fade">
 					<section>
-						<h1>Welcome to my contact page.</h1>
+						<h1>Contact</h1>
+
+						<p className="about">
+							If you would like to get in touch with me please do not hesitate to:
+							<br />
+							<br />
+							Call me on 07887368725
+							<br />
+							<br />
+							Email me at callumgoodley@btinternet.com
+							<br />
+							<br />
+							Message me on the social media platforms available via the icon links below
+						</p>
 					</section>
 				</CSSTransition>
 				<footer className="foot">

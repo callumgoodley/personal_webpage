@@ -25,6 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     padding-left: 10%;
     padding-right: 10%;
   }
+  
   .emoji {
     font-size: 3rem;
     text-align: center;
@@ -49,10 +50,12 @@ export const GlobalStyles = createGlobalStyle`
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
+
   }
   .projects {
    font-size: 1.2rem;
     text-align: center;
+    color: #D3D3D3;
     padding-left: 10%;
     padding-right: 10%;
   }
